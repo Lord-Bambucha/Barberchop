@@ -1,0 +1,21 @@
+.gallery .overtitle {
+    margin-bottom: 44px;
+}
+
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    flex-basis: calc((100% - 90px) / 4);
+
+    &:not(:nth-child(4n)) {
+            margin-right: 30px;
+        }
+
+    &:not(:nth-last-child(-n+4)) {
+        margin-bottom: 30px;
+    }
+}
+

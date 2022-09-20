@@ -1,0 +1,27 @@
+.overtitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+
+    &::before {
+            content: '';
+            width: 60px;
+            height: 1px;
+            background-color: currentColor;
+            margin-right: 20px;
+        }
+
+    &-theme-dark {
+    color: var(--overtitle-text-color-theme-dark);
+    }
+
+    &-theme-light {
+    color: var(--secondary-text-color-theme-light);
+    }
+}
+

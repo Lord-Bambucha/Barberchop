@@ -1,0 +1,28 @@
+.about .container {
+    display: flex;
+}
+
+.list-cont {
+    display: flex;
+    margin-right: 30px;
+}
+
+.about-cont {
+    width: 470px;
+}
+
+.about-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.about .description {
+    margin-bottom: 20px;
+}
+
+.about .descr-about {
+    margin-bottom: 42px;
+
+    font-size: 14px;
+    line-height: 1.86;
+    color: var(--primary-text-color-theme-light);
+}

@@ -1,0 +1,31 @@
+.social-links-list {
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: '';
+        width: 60px;
+        height: 1px;
+        background-color: var(--secondary-text-color-theme-light);
+        margin-right: 40px;
+        flex-shrink: 0;
+    }
+}
+
+.social-links-list-item+.social-links-list-item {
+    margin-left: 40px;
+}
+
+.social-links-list-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--secondary-text-color-theme-light);
+    transition: color 250ms linear;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
